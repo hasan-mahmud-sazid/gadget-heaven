@@ -1,101 +1,105 @@
 ````markdown
-# 🛒 Gadget Heaven | Premium Tech Store
+# 🛒 GadgetHeaven - Your Ultimate Tech Store
 
-![Gadget Heaven Banner](https://ibb.co.com/ZzJT5mG3.png)
-Gadget Heaven is a state-of-the-art e-commerce platform where tech enthusiasts can discover, compare, and purchase the latest gadgets. From high-performance laptops to sleek smartwatches, we bring the future to your fingertips.
+Welcome to **GadgetHeaven**, a modern E-commerce platform built with React. This application allows users to explore the latest tech gadgets, manage their shopping cart, and keep a wishlist of their favorite items.
+
+![GadgetHeaven](https://i.ibb.co.com/358cxVZV/image.png)
+
+## 🚀 Live Demo
+
+[Check out the Live Website](http://gadget-heaven001.surge.sh/)
 
 ---
 
-## 🚀 Live Link
+## ✨ Features
 
-Experience the app here: **[Gadget Heaven Live Demo](http://gadget-heaven001.surge.sh/)**
-
----
-
-## 🌟 Key Features
-
-- **Dynamic Navigation:** A real-time updating navbar that tracks your Cart and Wishlist items using React state management.
-- **Smart Filtering:** Effortlessly browse products by categories (Laptops, Phones, Accessories, Smartwatches, MacBooks).
-- **Interactive Dashboard:** Manage your selected items, sort them by price, and proceed to a mock checkout.
-- **Wishlist Management:** Save your favorite gadgets for later; items can be moved to the cart or removed anytime.
-- **Responsive UI:** A fully mobile-responsive design built with Tailwind CSS and DaisyUI for a premium look and feel.
-- **User Notifications:** Instant feedback via `React-Toastify` for every success or warning action.
+- **Dynamic Dashboard**: Manage your shopping cart and wishlist separately.
+- **Interactive Statistics**: View product price and rating comparisons using `Recharts`.
+- **Price Sorting**: Sort cart items by price (descending order) to find the best deals.
+- **Responsive Design**: Fully optimized for Mobile, Tablet, and Desktop using `Tailwind CSS`.
+- **Local Storage Persistence**: Cart and Wishlist data stay saved even after page refresh.
+- **Smooth Navigation**: Integrated with `React Router v6/v7` for a seamless experience.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology         | Purpose                                      |
-| ------------------ | -------------------------------------------- |
-| **React.js**       | Library for building the user interface      |
-| **React Router**   | Handling navigation and dynamic routing      |
-| **Tailwind CSS**   | Utility-first CSS framework for styling      |
-| **DaisyUI**        | Beautifully designed components for Tailwind |
-| **Context API**    | Managing global state (Cart/Wishlist counts) |
-| **Local Storage**  | Data persistence for cart and wishlist       |
-| **React Toastify** | Elegant pop-up notifications                 |
+- **Frontend**: React.js
+- **Styling**: Tailwind CSS & DaisyUI
+- **Navigation**: React Router DOM
+- **Charts**: Recharts
+- **Icons**: React Icons / FontAwesome
+- **Notifications**: React Toastify (Optional)
 
 ---
 
-## 📸 Screenshots
+## 📂 Project Structure
 
-<div align="center">
-  <img src="https://i.ibb.co.com/screenshot1.png" width="45%" alt="Home Page" />
-  <img src="https://i.ibb.co.com/screenshot2.png" width="45%" alt="Product Details" />
-</div>
+```text
+├── public
+│   └── products.json        # Main product database
+├── src
+│   ├── components           # Reusable UI components
+│   ├── layouts              # Layout wrappers (Navbar, Footer)
+│   ├── pages                # Main views (Dashboard, Statistics, Home)
+│   ├── utility              # LocalStorage management (addtoCart, wishlist)
+│   ├── App.jsx              # Main application entry
+│   └── main.jsx             # Router configuration
+└── README.md
+```
+````
 
 ---
 
 ## ⚙️ Installation & Setup
 
-To run Gadget Heaven locally, follow these steps:
+Follow these steps to run the project locally:
 
-1. **Clone the Repo**
-   ```bash
-   git clone [https://github.com/hasan-mahmud-sazid/gadget-heaven](https://github.com/hasan-mahmud-sazid/gadget-heaven.git)
-   ```
-````
+1. **Clone the repository:**
 
-2. **Install Dependencies**
+```bash
+git clone [https://github.com/hasan-mahmud-sazid/gadget-heaven.git](https://github.com/hasan-mahmud-sazid/gadget-heaven.git)
+
+```
+
+2. **Navigate to the project folder:**
+
+```bash
+cd gadget-heaven
+
+```
+
+3. **Install dependencies:**
 
 ```bash
 npm install
 
 ```
 
-3. **Start Development Server**
+4. **Start the development server:**
 
 ```bash
 npm run dev
 
 ```
 
----
+5. **Build for production:**
 
-## Technical Challenges Faced
-
-1. **Real-time Count Update:** Solved the issue of the Navbar not updating when "Add to Cart" was clicked on a different page using **Custom Events** and **useEffect**.
-2. **Data Persistence:** Implemented a utility logic using `localStorage` to ensure user data isn't lost on page refresh.
-3. **Dynamic Routing:** Handled nested paths and dynamic product IDs to show specific gadget details accurately.
-
----
-
-## Author
-
-**Hasan Mahmud** [GitHub](https://github.com/hasan-mahmud-sazid) | [LinkedIn](www.linkedin.com/in/hasan-mahmud-64967b210)
+```bash
+npm run build
 
 ```
 
 ---
 
-### ৩টি বিশেষ টিপস আপনার README এর জন্য:
+## 📊 Statistics Page Details
 
-1.  **Banner Image:** আপনার প্রজেক্টের একটি সুন্দর স্ক্রিনশট নিয়ে সেটি কোনো ইমেজ লিংকে (যেমন: ImgBB) আপলোড করে `![Gadget Heaven Banner]` এর লিংকে বসিয়ে দিন। এতে গিটহাব প্রোফাইল অনেক সুন্দর দেখায়।
-2.  **Badges:** আপনি যদি আরও প্রফেশনাল করতে চান, তবে টেক স্ট্যাক সেকশনে শিল্ড ব্যাজ (Shields.io) ব্যবহার করতে পারেন।
-3.  **Challenges Section:** আমি উপরে একটি **Technical Challenges** সেকশন যোগ করেছি। গিটহাবে এটি থাকলে ইন্টারভিউয়াররা বোঝেন যে আপনি সমস্যার সমাধান (Problem Solving) করতে পারেন।
+The statistics page uses a **Composed Chart** from `Recharts` to visualize:
 
+- **Price**: Represented by purple Bar charts.
+- **Total**: Background area shade for better contrast.
+- **Rating**: Scatter/Line overlay for product quality assessment.
 
+---
 
-**এটি সেভ করার পর গিটহাবে পুশ করে একবার আপনার রিপোজিটরি চেক করে দেখুন। সব ঠিকঠাক দেখাচ্ছে কি না?**
-
-```
+**Developed with ❤️ by [Hasan Mahmud]**
