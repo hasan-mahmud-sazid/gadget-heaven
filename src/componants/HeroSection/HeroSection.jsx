@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = () => {
+const HeroSection = () => {
   return (
     <div className="relative mb-60 md:mb-112.5">
       <div className="bg-[#9538E2] rounded-b-4xl pt-10 pb-44 md:pb-72 text-center text-white">
@@ -34,4 +34,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HeroSection;
