@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="p-2 md:p-4 border-2 border-white/30 rounded-3xl md:rounded-[40px] bg-white/20 backdrop-blur-2xl">
           <div className="rounded-[18px] md:rounded-4xl overflow-hidden shadow-2xl bg-white">
             <img
-              src="/src/assets/banner.jpg"
+              src="https://i.ibb.co.com/Y7KTvdnQ/image.png"
               alt="Gadget Banner"
               className="h-62.5 md:h-140.75 lg:w-265.5 object-cover"
             />

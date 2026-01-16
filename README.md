@@ -7,7 +7,7 @@ Welcome to **GadgetHeaven**, a modern E-commerce platform built with React. This
 
 ## 🚀 Live Demo
 
-[Check out the Live Website](http://gadget-heaven001.surge.sh/)
+[Check out the Live Website](https://hasan-bashful-camp.surge.sh/)
 
 ---
 

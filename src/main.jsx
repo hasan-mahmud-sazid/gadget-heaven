@@ -9,6 +9,7 @@ import Dashboard from "../src/componants/Dashboard/Dashboard";
 import Statistics from "../src/componants/Statistics/Statistics";
 import ProductDetails from "./componants/ProductDetails/ProductDetails";
 import { ToastContainer } from "react-toastify";
+import Compare from "./componants/Compare/Compare";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+        loader: () => fetch("/gadgets.json"),
+      },
+      {
+        path: "/compare",
+        element: <Compare></Compare>,
       },
     ],
   },

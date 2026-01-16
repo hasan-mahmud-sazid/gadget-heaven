@@ -2,7 +2,7 @@
   {
     "product_id": "P001",
     "product_title": "Apple iPhone 15 Pro Max",
-    "product_image": "https://i.ibb.co/KpLkcf28/iphone-15.jpg",
+    "product_image": "https://i.ibb.co.com/GvXL2tfr/image.png",
     "category": "Phones",
     "price": 1299,
     "description": "Apple's most powerful smartphone with titanium body and A17 chip.",
@@ -18,7 +18,7 @@
   {
     "product_id": "P002",
     "product_title": "Samsung Galaxy S24 Ultra",
-    "product_image": "https://i.ibb.co/1FYtrr5/s24-ultra.jpg",
+    "product_image": "https://i.ibb.co.com/Kz0G1cpQ/image.png",
     "category": "Phones",
     "price": 1199,
     "description": "Samsung flagship with AI camera and S-Pen.",
@@ -34,7 +34,7 @@
   {
     "product_id": "P003",
     "product_title": "Google Pixel 8 Pro",
-    "product_image": "https://i.ibb.co/VWY3jDfJ/pixel8.jpg",
+    "product_image": "https://i.ibb.co.com/spbsvmkF/image.png",
     "category": "Phones",
     "price": 999,
     "description": "Google’s AI powered camera phone.",
@@ -50,7 +50,7 @@
   {
     "product_id": "P004",
     "product_title": "OnePlus 12",
-    "product_image": "https://i.ibb.co/ZzWsrcNm/oneplus12.jpg",
+    "product_image": "https://i.ibb.co.com/M5MZWMBw/image.png",
     "category": "Phones",
     "price": 799,
     "description": "Flagship performance with smooth display.",
@@ -65,7 +65,7 @@
   {
     "product_id": "P005",
     "product_title": "Xiaomi 14 Pro",
-    "product_image": "https://i.ibb.co/ZRR2tnJN/xiaomi14.jpg",
+    "product_image": "https://i.ibb.co.com/SDXvkB9H/image.png",
     "category": "Phones",
     "price": 699,
     "description": "High performance phone with Leica camera.",
@@ -76,7 +76,7 @@
   {
     "product_id": "P006",
     "product_title": "Nothing Phone 2",
-    "product_image": "https://i.ibb.co/Q3xS91cG/nothing2.jpg",
+    "product_image": "https://i.ibb.co.com/DPpwGY7M/image.png",
     "category": "Phones",
     "price": 599,
     "description": "Unique transparent design with powerful specs.",
@@ -87,7 +87,7 @@
   {
     "product_id": "P007",
     "product_title": "MacBook Air M3",
-    "product_image": "https://i.ibb.co/v4Xb9CYy/macbookm3.jpg",
+    "product_image": "https://i.ibb.co.com/X63pdmx/image.png",
     "category": "MacBook",
     "price": 1499,
     "description": "Ultra-thin laptop with Apple M3 chip.",
@@ -103,7 +103,7 @@
   {
     "product_id": "P008",
     "product_title": "Dell XPS 15",
-    "product_image": "https://i.ibb.co/1Yxg4frK/dellxps.jpg",
+    "product_image": "https://i.ibb.co.com/5gHc93xj/image.png",
     "category": "Laptops",
     "price": 1399,
     "description": "Premium Windows ultrabook for professionals.",
@@ -114,7 +114,7 @@
   {
     "product_id": "P009",
     "product_title": "Apple Watch Series 9",
-    "product_image": "https://i.ibb.co/W49jHsy1/applewatch9.jpg",
+    "product_image": "https://i.ibb.co.com/gL9DGbp9/image.png",
     "category": "Smart Watches",
     "price": 499,
     "description": "Advanced health tracking smartwatch.",
@@ -125,7 +125,7 @@
   {
     "product_id": "P010",
     "product_title": "Samsung Galaxy Watch 6",
-    "product_image": "https://ibb.co.com/KpLkcf28.jpg",
+    "product_image": "https://i.ibb.co.com/mr6gv1Lw/image.png",
     "category": "Smart Watches",
     "price": 399,
     "description": "Smart fitness watch with AMOLED display.",

@@ -7,7 +7,9 @@ import { getWishList } from "../../utility/addtoWishList";
 
 const NavBar = () => {
   const location = useLocation();
-  const isDetailsPage = location.pathname.includes("/product/");
+  const isDetailsPage =
+    location.pathname.includes("/product/") ||
+    location.pathname.includes("/dashboard");
   const [cartCount, setCartCount] = useState(0);
   const [wishCount, setWishCount] = useState(0);
 
@@ -38,10 +40,13 @@ const NavBar = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
+        <NavLink to="/dashboard">Dashboard</NavLink>
+      </li>
+      <li>
         <NavLink to="/statistics">Statistics</NavLink>
       </li>
       <li>
-        <NavLink to="/dashboard">Dashboard</NavLink>
+        <NavLink to="/compare">Compare</NavLink>
       </li>
     </>
   );
@@ -88,19 +93,23 @@ const NavBar = () => {
         <ul className="menu menu-horizontal px-1 font-bold">{links}</ul>
       </div>
       <div className="navbar-end gap-5 px-4">
-        <div className="relative cursor-pointer bg-white p-2 rounded-full border shadow-sm text-black">
-          <MdOutlineShoppingCart className="text-xl" />
-          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full border-2 border-white">
-            {cartCount}
-          </span>
-        </div>
+        <NavLink to="/dashboard">
+          <div className="relative cursor-pointer bg-white p-2 rounded-full border shadow-sm text-black">
+            <MdOutlineShoppingCart className="text-xl" />
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full border-2 border-white">
+              {cartCount}
+            </span>
+          </div>
+        </NavLink>
 
-        <div className="relative cursor-pointer bg-white p-2 rounded-full border shadow-sm text-black">
-          <GiSelfLove className="text-xl" />
-          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full border-2 border-white">
-            {wishCount}
-          </span>
-        </div>
+        <NavLink to="/dashboard">
+          <div className="relative cursor-pointer bg-white p-2 rounded-full border shadow-sm text-black">
+            <GiSelfLove className="text-xl" />
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full border-2 border-white">
+              {wishCount}
+            </span>
+          </div>
+        </NavLink>
       </div>
     </div>
   );
